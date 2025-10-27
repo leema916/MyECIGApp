@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#0018A2</color>
+    <color name="cardColor">#637AFF</color>
+    <color name="cardColorOfTeacher">#CCD4FF</color>
+    <color name="yellow">#F3B623</color>
+</resources>

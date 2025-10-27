@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="5dp">
+<LinearLayout
+    android:background="@color/cardColorOfTeacher"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="vertical">
+    <TextView
+        android:textColor="@color/black"
+        android:id="@+id/course_name"
+        android:layout_width="386dp"
+        android:layout_height="36dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/the_course_name"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_italic"
+        android:id="@+id/course_notes"
+        android:layout_width="386dp"
+        android:layout_height="34dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="@string/course_notes" />
+</LinearLayout>
+</com.google.android.material.card.MaterialCardView>

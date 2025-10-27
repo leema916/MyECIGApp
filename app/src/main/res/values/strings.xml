@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">AppEcig</string>
+    <string name="registration">Registration</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="back">Back</string>
+
+    <!-- les strings de log in -->
+    <string name="loginName"> Log In </string>
+    <string name="emailHint"> username@gmail.com </string>
+    <string name="passwordHint"> password </string>
+    <string name="forgotPassword">  Mot de passe oublié ? </string>
+    <string name="loginBtn">  Log in </string>
+
+
+    <!-- Les strings concernant l'Admin : -->
+    <string name="admin">Admin</string>
+    <string name="nomAdmin"> Nom </string>
+    <string name="emailAdmin"> email@gmail.com </string>
+    <string name="requests"> Les demandes d\'inscription </string>
+    <string name="userNameRequest"> Nom d\'utilisateur </string>
+    <string name="userRoleRequest"> Role </string>
+    <string name="userEmailRequest"> user@gmail.com </string>
+    <string name="userStatutRequest"> Statut d\'approbation </string>
+
+
+    <!-- Student Strings : -->
+    <string name="student"> Etudiant </string>
+
+
+    <!-- Enseignant Strings : -->
+    <string name="teacher">Enseignant</string>
+    <string name="select_field">Fillière</string>
+    <string name="select_group"> Groupe</string>
+    <string name="select_subject">Matière</string>
+    <string name="select_video"> Ajouter vidéo </string>
+    <string name="select_pdf"> Ajouter PDF </string>
+    <string name="upload_course"> Uploader le cours  </string>
+    <string name="course_name"> Nom de cours </string>
+    <string name="course_notes"> Des notes supplémentaires </string>
+    <string name="the_course_name">Course Name</string>
+    <string name="download_pdf"> Télécharger PDF </string>
+
+    <!-- les strings de sign up -->
+    <string name="create_naccount">Créer\nCompte</string>
+    <string name="nom">Nom</string>
+    <string name="entrer_votre_nom">Entrer Votre Nom</string>
+    <string name="emailSignUp">Email</string>
+    <string name="entrer_voter_email">Entrer Voter Email</string>
+    <string name="passwordSignUp">Mot de Passe</string>
+    <string name="entrer_votre_mot_de_passe">Entrer Votre Mot de Passe</string>
+    <string name="confirm_password">Confirmer Mot de Passe</string>
+    <string name="confirm_your_password">Confirmer Votre Mot de Passe</string>
+    <string name="roleSignUp">Role</string>
+    <string name="roleGotten">role</string>
+    <string name="signupBtn">signup</string>
+    <string name="se_connecterLiien">se connecter</string>
+    <string name="hello_blank_fragment">\nHello Fragment\n</string>
+
+</resources>

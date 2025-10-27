@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav.xml"
+    app:startDestination="@id/BlankFragment">
+
+    <fragment
+        android:id="@+id/BlankFragment"
+        android:name="com.example.appecig.BlankFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_blank" />
+    <fragment
+        android:id="@+id/coursFragment"
+        android:name="com.example.appecig.Cours"
+        android:label="fragment_cours"
+        tools:layout="@layout/fragment_cours" />
+    <fragment
+        android:id="@+id/notesFragment"
+        android:name="com.example.appecig.Notes"
+        android:label="fragment_notes"
+        tools:layout="@layout/fragment_notes" />
+    <fragment
+        android:id="@+id/emploiFragment"
+        android:name="com.example.appecig.Emploi"
+        android:label="fragment_emploi"
+        tools:layout="@layout/fragment_emploi" />
+    <fragment
+        android:id="@+id/supportFragment"
+        android:name="com.example.appecig.Support"
+        android:label="fragment_support"
+        tools:layout="@layout/fragment_support" />
+    <activity
+        android:id="@+id/cards"
+        android:name="com.example.appecig.Cards"
+        android:label="activity_cards"
+        tools:layout="@layout/activity_cards" />
+    <activity
+        android:id="@+id/login"
+        android:name="com.example.appecig.Login"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.appecig.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <activity
+        android:id="@+id/etudiantActivity"
+        android:name="com.example.appecig.EtudiantActivity"
+        android:label="activity_accueille"
+        tools:layout="@layout/activity_etudiant" />
+    <fragment
+        android:id="@+id/courItemFragment"
+        android:name="com.example.appecig.CourItemFragment"
+        android:label="fragment_cour_item_activity"
+        tools:layout="@layout/fragment_cour_item_fragment" />
+    <activity
+        android:id="@+id/signup"
+        android:name="com.example.appecig.Signup"
+        android:label="activity_signup_etdu"
+        tools:layout="@layout/activity_signup" />
+    <activity
+        android:id="@+id/adminActivity"
+        android:name="com.example.appecig.AdminActivity"
+        android:label="activity_admin"
+        tools:layout="@layout/activity_admin" />
+    <activity
+        android:id="@+id/teacherActivity"
+        android:name="com.example.appecig.TeacherActivity"
+        android:label="TeacherActivity" />
+    <fragment
+        android:id="@+id/signUpRequests"
+        android:name="com.example.appecig.signUpRequests"
+        android:label="fragment_sign_up_requests"
+        tools:layout="@layout/fragment_sign_up_requests" />
+    <fragment
+        android:id="@+id/calenderTeacher"
+        android:name="com.example.appecig.calenderTeacher"
+        android:label="fragment_calender_teacher"
+        tools:layout="@layout/fragment_calender_teacher" />
+    <fragment
+        android:id="@+id/coursTeacher"
+        android:name="com.example.appecig.coursTeacher"
+        android:label="fragment_cours_teacher"
+        tools:layout="@layout/fragment_cours_teacher" />
+    <fragment
+        android:id="@+id/moduleTeacher"
+        android:name="com.example.appecig.moduleTeacher"
+        android:label="fragment_module_teacher"
+        tools:layout="@layout/fragment_module_teacher" />
+    <fragment
+        android:id="@+id/pendingFragment"
+        android:name="com.example.appecig.PendingFragment"
+        android:label="fragment_pending"
+        tools:layout="@layout/fragment_pending" />
+    <activity
+        android:id="@+id/courseDetailsActivity"
+        android:name="com.example.appecig.CourseDetailsActivity"
+        android:label="CourseDetailsActivity" />
+
+</navigation>

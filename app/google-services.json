@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1014421952917",
+    "project_id": "the-ecig-app-project",
+    "storage_bucket": "the-ecig-app-project.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1014421952917:android:5bcac7be378a871765be9c",
+        "android_client_info": {
+          "package_name": "com.example.appecig"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDK_vB-iVIA7LcZKh0QjNjW1Vjy4ITXhbg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
