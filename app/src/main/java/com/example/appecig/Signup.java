@@ -188,35 +188,30 @@ public class Signup extends AppCompatActivity {
     private void signUp() {
         mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, task -> {
-                    progressBar.setVisibility(View.GONE);
-                    if (task.isSuccessful()) {
-                        uid = task.getResult().getUser().getUid();
 
-                        filiere = fieldSpinner.getSelectedItem().toString();
-                        groupe = groupSpinner.getSelectedItem().toString();
-                    } else {
-                        Toasty.message(this, "Something went wrong!: " +
-                                task.getException().getMessage());
+                    progressBar.setVisibility(View.GONE);
+
+                    if (!task.isSuccessful()) {
+                        Toasty.message(this, task.getException().getMessage());
                         return;
                     }
+
+                    uid = task.getResult().getUser().getUid();
                     role = roleTxt.getText().toString();
-                    if (task.isSuccessful()) {
 
-                        userMap.put("name", name);
-                        userMap.put("email", email);
-                        userMap.put("password", password);
-                        userMap.put("filiere", filiere);
-                        userMap.put("group", groupe);
-                        userMap.put("role", role);
-                        userMap.put("approved", false);
+                    userMap.clear();
+                    userMap.put("name", name);
+                    userMap.put("email", email);
+                    userMap.put("role", role);
+                    userMap.put("approved", false);
 
-                        sendToFirestore();
-
-                    } else {
-                        Toast.makeText(Signup.this, "Registration failed: ***  " +
-                                task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                    // ONLY students have filiere & group
+                    if (role.equals("Etudiant")) {
+                        userMap.put("filiere", fieldSpinner.getSelectedItem().toString());
+                        userMap.put("group", groupSpinner.getSelectedItem().toString());
                     }
 
+                    sendToFirestore();
                 });
     }
 
@@ -233,8 +228,11 @@ public class Signup extends AppCompatActivity {
                             pending();
                             break;
                         case "Enseignant":
-                            startActivity(new Intent(Signup.this, TeacherActivity.class));
+                           /* startActivity(new Intent(Signup.this, TeacherActivity.class));
                             finish();
+                            break;
+                            */
+                            pending();
                             break;
                         case "Admin":
                             startActivity(new Intent(Signup.this, AdminActivity.class));
